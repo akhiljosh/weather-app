@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Little Weather</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="weather-card">
+    <p class="eyebrow">YOUR LITTLE WEATHER REPORT</p>
+    <h1>How's the sky?</h1>
+    <label for="city-select">Choose an area</label>
+    <select id="city-select">
+      <option value="17.385,78.4867,Hyderabad,India,Asia/Kolkata">Hyderabad, India</option>
+      <option value="19.076,72.8777,Mumbai,India,Asia/Kolkata">Mumbai, India</option>
+      <option value="28.6139,77.209,New Delhi,India,Asia/Kolkata">New Delhi, India</option>
+      <option value="13.0827,80.2707,Chennai,India,Asia/Kolkata">Chennai, India</option>
+      <option value="51.5072,-0.1276,London,United Kingdom,Europe/London">London, United Kingdom</option>
+      <option value="40.7128,-74.006,New York,United States,America/New_York">New York, United States</option>
+      <option value="35.6762,139.6503,Tokyo,Japan,Asia/Tokyo">Tokyo, Japan</option>
+      <option value="-33.8688,151.2093,Sydney,Australia,Australia/Sydney">Sydney, Australia</option>
+    </select>
+
+    <p id="status" class="status" aria-live="polite">Getting the weather…</p>
+    <section id="weather-result" hidden>
+      <div id="weather-emoji" class="weather-emoji" aria-hidden="true">🌤️</div>
+      <h2 id="condition">Weather</h2>
+      <p id="city-name" class="city-name">City</p>
+      <p id="temperature" class="temperature">--°C</p>
+      <p id="fahrenheit" class="secondary-temp">--°F</p>
+      <p class="local-time-label">Local time</p>
+      <p id="city-time" class="city-time">--:--</p>
+    </section>
+    <blockquote id="weather-quote">“Every kind of weather has its own magic.”</blockquote>
+    <p class="credit">Weather data by Open-Meteo</p>
+  </main>
+</body>
+</html>
